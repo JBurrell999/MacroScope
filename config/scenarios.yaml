@@ -1,0 +1,29 @@
+- name: Inflation Crisis
+  description: >
+    Prices are rising rapidly. Your goal is to bring down inflation without triggering a recession.
+  levers:
+    - name: Interest Rate
+      min: 0
+      max: 10
+      default: 3.5
+      unit: "%"
+    - name: Fiscal Stimulus
+      min: 0
+      max: 1000
+      default: 200
+      unit: "B"
+    - name: Corporate Tax Rate
+      min: 10
+      max: 40
+      default: 25
+      unit: "%"
+    - name: Carbon Tax
+      min: 0
+      max: 100
+      default: 10
+      unit: "$/ton"
+    - name: Minimum Wage
+      min: 7
+      max: 25
+      default: 15
+      unit: "$/hr"
