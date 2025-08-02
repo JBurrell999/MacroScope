@@ -17,13 +17,133 @@
       max: 40
       default: 25
       unit: "%"
-    - name: Carbon Tax
-      min: 0
-      max: 100
-      default: 10
-      unit: "$/ton"
     - name: Minimum Wage
       min: 7
       max: 25
       default: 15
       unit: "$/hr"
+
+- name: Climate Investment Push
+  description: >
+    You lead a government responding to climate pressure. Balance emissions, equity, and economic growth.
+  levers:
+    - name: Green Subsidy Spending
+      min: 0
+      max: 1000
+      default: 300
+      unit: "B"
+    - name: Carbon Tax
+      min: 0
+      max: 100
+      default: 20
+      unit: "$/ton"
+    - name: Fossil Fuel Tariff
+      min: 0
+      max: 50
+      default: 15
+      unit: "%"
+    - name: Basic Income
+      min: 0
+      max: 20000
+      default: 5000
+      unit: "$/yr"
+
+- name: Global Trade Shock
+  description: >
+    Supply chains are disrupted. Your goal is to stabilize domestic industries while protecting trade growth.
+  levers:
+    - name: Tariff Rate
+      min: 0
+      max: 50
+      default: 10
+      unit: "%"
+    - name: Export Subsidies
+      min: 0
+      max: 500
+      default: 100
+      unit: "B"
+    - name: Infrastructure Investment
+      min: 0
+      max: 1500
+      default: 500
+      unit: "B"
+    - name: Interest Rate
+      min: 0
+      max: 10
+      default: 2.0
+      unit: "%"
+
+- name: Tech Automation Crisis
+  description: >
+    Automation displaces workers. Balance innovation, retraining, and economic inclusion.
+  levers:
+    - name: R&D Subsidies
+      min: 0
+      max: 1000
+      default: 300
+      unit: "B"
+    - name: Retraining Budget
+      min: 0
+      max: 500
+      default: 200
+      unit: "B"
+    - name: Corporate Tax Rate
+      min: 10
+      max: 50
+      default: 30
+      unit: "%"
+    - name: Robot Tax
+      min: 0
+      max: 30
+      default: 5
+      unit: "%"
+
+- name: Housing Affordability Crisis
+  description: >
+    Rents are skyrocketing. Solve the housing crisis without crashing the construction sector.
+  levers:
+    - name: Rent Control Cap
+      min: 0
+      max: 10
+      default: 5
+      unit: "%"
+    - name: Public Housing Investment
+      min: 0
+      max: 1000
+      default: 400
+      unit: "B"
+    - name: Property Tax Rate
+      min: 0.5
+      max: 5.0
+      default: 1.5
+      unit: "%"
+    - name: Zoning Deregulation Score
+      min: 0
+      max: 100
+      default: 40
+      unit: "index"
+
+- name: Student Debt Forgiveness Debate
+  description: >
+    Should the government cancel student debt? Evaluate the macroeconomic and equity implications.
+  levers:
+    - name: Forgiveness Amount
+      min: 0
+      max: 50000
+      default: 10000
+      unit: "$"
+    - name: Income Threshold
+      min: 0
+      max: 250000
+      default: 125000
+      unit: "$"
+    - name: Education Subsidy
+      min: 0
+      max: 1000
+      default: 300
+      unit: "B"
+    - name: Federal Reserve Rate
+      min: 0
+      max: 10
+      default: 3
+      unit: "%"
