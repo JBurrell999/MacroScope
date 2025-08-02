@@ -27,16 +27,20 @@ scenario = next(s for s in scenarios if s['name'] == selected)
 
 st.markdown(scenario["description"])
 
-# Dynamically Render Levers
+
+# Dynamically Render Levers with type-casting
 user_inputs = {}
 for lever in scenario["levers"]:
+    # Ensure matching types (int or float) across min, max, default
+    lever_type = type(lever["min"])
     value = st.slider(
         f"{lever['name']} ({lever['unit']})",
-        min_value=lever["min"],
-        max_value=lever["max"],
-        value=lever["default"]
+        min_value=lever_type(lever["min"]),
+        max_value=lever_type(lever["max"]),
+        value=lever_type(lever["default"])
     )
     user_inputs[lever["name"]] = value
+
 
 # Simulate Outputs
 def run_simulation(scenario_name, inputs):

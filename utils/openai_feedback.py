@@ -1,7 +1,7 @@
 import openai
 import os
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("x")
 
 def get_feedback(scenario, levers, outputs):
     lever_str = "\n".join([f"{k}: {v}" for k, v in levers.items()])
